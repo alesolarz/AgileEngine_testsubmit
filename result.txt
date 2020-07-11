@@ -1,0 +1,15 @@
+Probable Tag in sample-1-evil-gemini.html: <a class="btn btn-success" href="#check-and-ok" onclick="javascript:window.okDone(); return false;" rel="done" title="Make-Button">
+Reason: Same Tag Type. Same class. Same tittle. Same onclick.
+Path: /html/body/div/div/div[3]/div[1]/div/div[2]/a[2]
+
+Probable Tag in sample-2-container-and-clone.html: <a class="btn test-link-ok" href="#ok" onclick="javascript:window.okComplete(); return false;" rel="next" title="Make-Button">
+Reason: Same Tag Type. Same href. Same tittle. Same rel.
+Path: /html/body/div/div/div[3]/div[1]/div/div[2]/div/a
+
+Probable Tag in sample-3-the-escape.html: <a class="btn btn-success" ref="#ok" onclick="javascript:window.okDone(); return false;" rel="next" title="Do-Link">
+Reason: Same Tag Type. Same class. Same href. Same rel. Same onclick.
+Path: /html/body/div/div/div[3]/div[1]/div/div[3]/a
+
+Probable Tag in sample-4-the-mash.html: <a class="btn btn-success" href="#ok" onclick="javascript:window.okFinalize(); return false;" rel="next" title="Make-Button">
+Reason: Same Tag Type. Same class. Same href. Same tittle. Same rel.
+Path: /html/body/div/div/div[3]/div[1]/div/div[3]/a
