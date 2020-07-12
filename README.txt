@@ -15,4 +15,4 @@ Example of usage:
 perl finder.pl sample-0-origin.html sample-1-evil-gemini.html make-everything-ok-button
 
 
-Results for sample pages are in result.txt
+Results for sample pages are in result.txt (by running test.sh)
