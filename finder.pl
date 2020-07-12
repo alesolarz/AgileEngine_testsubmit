@@ -97,17 +97,21 @@ foreach my $lkey (keys %{$posibles}) { # Finding best candidate
 
 open(my $fh, '>>', 'result.txt') or die "Can't open file: result.txt";
 
+my $header ="Result '$filename' vs '$filename2', ID '$pattern':";
+my $dataprint;
 if($probable_count){ # Print results
 	#Search for path of candidate
 	my $doc = XML::LibXML->load_xml(location => $filename2);
 	foreach my $node ($doc->findnodes('//'. $search_path)) {
 		$probable_path = $node->nodePath();
 	}
-	my $dataprint = "Result '$filename' vs '$filename2', ID '$pattern':\nProbable Tag in $filename2: $probable_tag\nReason: $probable_reason\nPath to Tag: $probable_path\n\n";
+	$dataprint = "$header\nProbable Tag in $filename2: $probable_tag\nReason: $probable_reason\nPath to Tag: $probable_path\n\n";
 	print $fh $dataprint;
 	print $dataprint;
 }else{
-	print "No match Tag found in destination: $filename2";
+	$dataprint = "$header\nNo match Tag found in destination: $filename2\n\n";
+	print $fh $dataprint;
+	print $dataprint;
 }
 
 close $fh;
